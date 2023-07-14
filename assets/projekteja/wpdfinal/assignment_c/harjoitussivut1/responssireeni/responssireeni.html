@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="initial-scale=1.0,width=device-width"/>
+
+<meta charset="utf-8" />
+<meta name="author" content="WPD-student" />
+<meta name="keywords" content="xhtml, html5, wpd, jamk, tiko, rwd" />
+<meta name="description" content="Base for RWD exercises" />
+<link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>
+<title>WPD - RWD exercise</title>
+<style>
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {    margin: 0;  padding: 0; border: 0;  font-size: 100%;    font: inherit;  vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {    display: block;}body {  line-height: 1;}ol, ul {    list-style: none;}blockquote, q {   quotes: none;}blockquote:before, blockquote:after,q:before, q:after {   content: '';    content: none;}table {  border-collapse: collapse;  border-spacing: 0;}
+
+
+/* basic styles */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    
+    background-color: #cccccc;
+}
+
+#container {
+    position: relative;
+    width: 95%;
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: #dddddd;
+}
+
+
+h1 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 3.25rem;
+    font-size:relative;
+}
+
+h2 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E18200;
+    margin-bottom: 10px;
+}
+
+
+h3 {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+a {
+    color: black;
+}
+
+header {
+    background-color: #B9ABDF;
+    padding: 20px 1.25%;
+    height: 75px;
+}
+
+header h1 i {
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav li {
+    font-family: 'Advent Pro', sans-serif;
+    font-size:1.375rem;
+    display: inline;
+}
+
+nav li:before {
+    content: url(pics/flower-icon.png);
+    vertical-align: -10px;
+}
+
+
+#content {
+    float: left;
+    width: 75%;
+    margin: 10px 1.25%;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+figure {
+    margin: 10px 1.66667%;
+}
+
+img {
+    border-radius: 15px;
+    -webkit-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 15px 0px rgba(0,0,0,0.75);
+    max-width: 100%;
+}
+
+.leftpic {
+    float: left;
+    width: 41.666667%;
+}
+
+.rightpic {
+    float: right;
+    width: 41.666667%;
+}
+
+aside {
+    float: right;
+    width: 19.75%;
+    margin: 10px 1.25%;
+    font-size: 0.875rem;
+}
+
+aside li {
+    margin-left: 10px 6.329113924050633%‬;
+
+}
+
+footer {
+    clear: both;
+    background-color: #B9ABDF;
+    padding: 1.25%;
+    font-size: 0.75rem;
+}
+
+footer li {
+    display: inline;
+}
+
+#jumptonavi {
+    display: none;
+    margin-top: 10px;
+    font-size: 1.25rem;
+}
+@media (max-width:825px){
+    nav{
+        position: absolute;
+        top: 90px;
+        left: 10px;
+    }
+    body{
+        font-size: 95%;
+    }
+}    
+@media(max-width:550px){
+    body{
+        font-size: 90%;
+    }
+    #container{
+        width: 100%;
+
+    }
+    #content{
+        width: 100%;
+    }
+    .leftpic, .rightpic{
+        width: 70%;
+        float: none;
+        margin: 10px auto;       
+    }
+    aside{
+        width: 100%;
+        float:none;
+        
+
+    }
+    aside h3{
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 1.75rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid #E18200;
+        margin-bottom: 10px;
+        
+    }
+    aside a{
+        font-size: 1.2rem;
+    }
+    nav {
+        position: static;
+    }
+    nav li{
+        display: block;
+    }
+    
+    #jumptonavi{
+        display: block;
+    }
+   
+}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+
+<header>
+<h1>RWD exercise</h1>
+<div id="jumptonavi"><a href="#navi">Jump to Navigation</a></div>
+</header>
+
+
+<section id="content">
+<h2>Lorem ipsum</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor impedit quidem nesciunt aspernatur molestiae consectetur voluptates distinctio, eaque tenetur soluta ducimus dolorem excepturi, ut porro ad quod, vitae, delectus maiores!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat nostrum ratione nisi dignissimos illum magnam, aut eum maxime fugit perspiciatis facilis veniam totam voluptatibus quam. Incidunt nesciunt, corrupti doloribus.</p>
+
+<figure class="rightpic">
+<img src="pics/beach.jpg" alt="Beach">
+</figure>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor impedit quidem nesciunt aspernatur molestiae consectetur voluptates distinctio, eaque tenetur soluta ducimus dolorem excepturi, ut porro ad quod, vitae, delectus maiores!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat nostrum ratione nisi dignissimos illum magnam, aut eum maxime fugit perspiciatis facilis veniam totam voluptatibus quam. Incidunt nesciunt, corrupti doloribus.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat nostrum ratione nisi dignissimos illum magnam, aut eum maxime fugit perspiciatis facilis veniam totam voluptatibus quam. Incidunt nesciunt, corrupti doloribus.</p>
+
+
+<h2>Even more lorem ipsum</h2>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor impedit quidem nesciunt aspernatur molestiae consectetur voluptates distinctio, eaque tenetur soluta ducimus dolorem excepturi, ut porro ad quod, vitae, delectus maiores!</p>
+
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat nostrum ratione nisi dignissimos illum magnam, aut eum maxime fugit perspiciatis facilis veniam totam voluptatibus quam. Incidunt nesciunt, corrupti doloribus.</p>
+
+<figure class="leftpic">
+<img src="pics/ocean.jpg" alt="Ocean">
+</figure>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor impedit quidem nesciunt aspernatur molestiae consectetur voluptates distinctio, eaque tenetur soluta ducimus dolorem excepturi, ut porro ad quod, vitae, delectus maiores!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat nostrum ratione nisi dignissimos illum magnam, aut eum maxime fugit perspiciatis facilis veniam totam voluptatibus quam. Incidunt nesciunt, corrupti doloribus.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore quaerat nostrum ratione nisi dignissimos illum magnam, aut eum maxime fugit perspiciatis facilis veniam totam voluptatibus quam. Incidunt nesciunt, corrupti doloribus.</p>
+
+</section>
+
+
+<aside>
+<h3>Related Links</h3>
+<ul>
+    <li><a href="#">Jamk</a></li>
+    <li><a href="#">Tiko</a></li>
+    <li><a href="#">Blog</a></li>
+</ul>
+
+</aside>
+
+<nav id="navi">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Articles</a></li>
+<li><a href="#">Archives</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">About</a></li>
+</ul>
+</nav>
+
+<footer>
+<ul>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms of Use</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</footer>
+
+</div>
+</body>
+
+</html>

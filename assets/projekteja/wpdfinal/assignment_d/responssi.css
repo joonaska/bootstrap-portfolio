@@ -1,0 +1,283 @@
+
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+
+}
+body{
+    background:#333;
+    margin: 30px  50px;
+    
+}
+
+
+img{
+    max-width: 100%;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 25px;
+    
+    grid-template-areas:  /*piirretään ikäänkuin sivun sisältö tekstein*/
+    'navi navi navi'
+    'headeri headeri headeri'
+    'inffot inffot inffot'
+    'tietoja tietoja tietoja'
+    'footer footer footer';
+}
+
+/*navigaatio*/
+.navi{
+    display:grid;
+    grid-area:navi;
+    
+    list-style: none;
+}
+
+.navi ul{
+    display: grid;
+    grid-gap: 25px;
+    
+    
+    /* lista tyyli pois , pisteet */
+    list-style: none;
+    /* fr - fraction, ei tarvii säädellä prosenttien, pixelien ym. kanssa. https://css-tricks.com/introduction-fr-css-unit/ */
+    grid-template-columns: repeat(3, 1fr);
+    /* vaihtoehtoisesti voi kirjoittaa 1fr 1fr 1fr*/
+}
+
+.navi a{
+    background: #333;
+    display: block;                    /* navit vierekkäin*/
+    text-decoration: none;
+    padding: 1rem;                    /*remit skaalautuu html mukaan joka defaulttina 1 rem = 16px, em puolestaa edellisen elementin mukaan tai säädettynä */
+                                        /*remit hyvät responsiivisessa, vaihtoehtona prosentit*/
+    text-align: center;
+    color:#ddd;
+    text-transform: uppercase; /* Tekstit isoilla kirjaimilla */
+    font-size: 1.5rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    border-radius: 1rem;
+}
+
+.navi a:hover{
+    background: rgb(114, 113, 113);
+    color:#fff;
+
+}
+
+/*perustiedot*/
+
+.perustiedot{
+
+    display:grid;
+    grid-area:headeri;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    margin-left: 3rem;
+    margin-right:3rem;
+
+
+    min-height: 300px;
+    background: url(./img/tausta.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    padding: 2rem;
+        
+}
+
+h1{
+    display:grid;
+    grid-column-start:1; /* yhdistetty palikka */
+    grid-column-end: 3;
+    
+    font-size: 4rem;
+    
+    color:#fff;
+}
+.headeri p{
+    font-size: 1.5rem;
+    color:#fff;   
+
+}
+/*Pikku inffoboksit*/
+
+.inffot{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    grid-area:inffot;
+    margin-left: 6rem;
+    margin-right:6rem;
+    
+}
+.infoboksi{
+    background: #ddd;
+    text-align: center;
+    padding: 2rem 2rem;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    border-radius: 1rem;
+}
+/* tietoboksi/ sosmedia / kokemuksia viimesenä ennen footteria  */
+.tietoja{
+
+    display: grid;
+    grid-area: tietoja;
+    grid-gap: 25px;
+    background: #333;
+    color:#ddd;
+                                                                /*auto-fit venyttää columneja, auto-fill "tekee haamuja" tyhjiä columneja */
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); /* minmax functiolla columneista ei tule liian kapeita, eli minimissää 200px maxsimissaan 1 fractionin */
+    padding: 3rem;
+    border-radius: 1rem;
+    border:solid;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    font-size: 1.5rem;
+}
+footer{
+    display: grid;
+    grid-area: footer;
+    grid-gap:25px;
+    display: flex;
+    justify-content: center;
+    margin-top:2rem;
+    background:#333;
+    color:#fff;
+    text-align: center;
+    padding: 2rem;
+    border:solid #ddd ;
+    border-radius: 1rem;
+}
+a:visited{
+    color: #fff;
+}
+button{
+    display:none;
+}
+
+
+
+/* media queryt */
+
+@media(max-width: 825px){
+
+    .wrapper{
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+        'navi navi'
+        'headeri headeri'
+        
+        'inffot inffot'
+        'tietoja tietoja'
+        'footer footer';   
+    }
+  
+    .navi ul{
+        grid-template-columns: 2fr;
+        
+    }
+    
+    .dots{
+        display: none;
+    }
+    .nappi1{
+        background: #333;
+        color: #fff;
+        display:block;
+        padding: 0.6rem 1.3rem;
+        text-decoration: none;
+        border: 0;
+        border-radius: 1rem;
+
+    }
+    .nappi2{
+        background: #fff;
+        color: #333;
+        display:block;
+        padding: 0.6rem 1.3rem;
+        text-decoration: none;
+        border: 0;
+        border-radius: 1rem;
+
+    }
+    #lisamatskua{
+        display:none;
+    }
+    #lisamatskua2{
+        display:none;
+    }
+    
+    
+
+@media(max-width: 550px){
+
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'navi'
+        'headeri'
+        
+        'inffot'
+        'tietoja'
+        'footer';
+        
+    }  
+   
+    
+         
+   
+    .inffot p {
+        display:none;
+        
+    }
+    .dots{
+        display: block;
+        
+    }
+    .perustiedot{
+        margin: 0;
+    }
+    button{
+        background: #333;
+        color: #fff;
+        padding: 0.6rem 1.3rem;
+        text-decoration: none;
+        border: 0;
+        border-radius: 1rem;
+
+    }
+   
+   
+    footer p{
+        display:none;
+    }
+    footer i{
+        display: block;
+    }
+    
+    /*Lisämatskua nappi */
+    #lisamatskua{
+        display:none;
+    }
+    #lisamatskua2{
+        display:none;
+    }
+
+    
+      #nappi1 {
+        display: block;
+      }
+    }
+    
+    .nappi1  {
+      display: none;
+    }
+    
+    .show {
+       display: block!important;
+    }
+    
+}
+

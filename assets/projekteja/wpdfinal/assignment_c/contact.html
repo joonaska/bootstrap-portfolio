@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+ <!-- näin selaimet ymmärtävät että kyseessä on html sivusto-->
+<html lang="en">
+
+<head>
+<!--headissa kaikki metatiedot ja scriptit sekä välilehden otsikko-->
+<meta charset="UTF-8" />
+
+<meta Name="Author" Content="Joonas Kangaskoski, 8.2.2020">
+<meta Name="Description"
+        Content="WPD Final Assignment, näyttötyö">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+<!--linkataan .css filuun, missä näppärästi kaikki sivun stylet jemmassa/säädeltävissä-->
+<link rel="stylesheet" href="contact.css" />
+<!--sivun otsikko välilehteen-->
+
+<title>Ota yhteyttä!</title>
+<script src="https://kit.fontawesome.com/69f05b1d3e.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    
+
+
+
+    <section>
+        <header>
+            <h1> Ota Yhteyttä!</h1> 
+            </header>
+    </section>
+    <div class="container">  
+        <form action="action.php" method="POST" onsubmit="alert('Viesti lähetetty!')">
+            
+                <label for="name">Nimi</label>
+                <input name="name" id="name" type="text" placeholder="Etunimi Sukunimi">
+            
+            
+                <label for="phone">Puhelin</label>
+                <input name="tel" id="phone" type="text" placeholder="+358 40 1234567">
+            
+            
+                <label for="address">Email</label>
+                <input name="address" id="address" type="text" placeholder="esimerkki@maili.com">
+            
+                <label for="lisätiedot">Lisätiedot</label>
+                <textarea  maxlength="400" id="lisätiedot" style="height: 200px;" placeholder="Kirjoita tähän...."></textarea>
+           
+            
+            <input type="submit" value="Lähetä">
+        </form>
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+<!--footteri eli jokasivun alle tuommonen "kivijalka" missä on esim. nappuloita tai linkkejä vaikka sosiaalisenmedian kanaviin.-->
+<footer><p>Joonas Kangaskoski, N3303 ---- Talosta takaisin etusivulle -> <a href="../assignment_d/responssi.html"><i class="fas fa-home fa-2x"></i></a> -- Nuolesta Päättötyön alkuun -> <a href="../index.html"><i class="fas fa-arrow-up fa-2x"></i></a> </p> </footer>
+
+
+</body>
+</html>

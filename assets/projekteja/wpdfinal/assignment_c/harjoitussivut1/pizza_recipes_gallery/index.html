@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="WPD-student" />
+    <meta name="keywords" content="xhtml, html5, wpd, jamk, tiko, recipes" />
+    <meta name="description" content="Exercises for the WPD course." />
+    <title>Jope Kokkaa</title>
+    <link rel="stylesheet" href="styles_gallery.css">
+    <link href="./PgwSlideshow-master/pgwslideshow.css" rel="stylesheet" />
+    
+
+    
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <img src="./pics/www_logo.gif" alt="JAMK" />
+            <h1>Jope Kokkaa</h1>
+        </header>
+        <!-----------Navigaatiopalkki--------------------->
+        <nav>
+            <ul id="navi">
+                <li><span class="sel">Home</span></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="pizza.html">Pizza Online</a></li>
+                <li><a href="gallery.html">Recipes</a></li>
+                
+                
+               
+               
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <!------Lomake------->
+            <table id="login">
+                <form action="action.php" method="POST">
+
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input required name="email" id="email" type="email">
+                        </td>
+                        <td rowspan="2">
+                            <button type="submit">Login</button>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input required type="password" id="password" type="password">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+
+
+        </nav>
+        <!----------Mainokset--------------->
+        <aside id="mainokset">
+            <img src="./pics/compsale.jpg" alt="Computer Shop" />
+
+            <img src="./pics/pertsanpub.jpg" alt="Pertsan Pub" />
+
+            <img src="./pics/clickhere.jpg" alt="Want your ad here?" />
+        </aside>
+        <!--------------Pääsisältö------------->
+        <main>
+            <h2>Gallery Examples</h2>
+
+            <ul class="pgwSlideshow">
+                    <li><img src="./lightbox/gallerypics/Butterbeer-Recipe.jpg" alt="Butterbeer"> </li>
+                    <li><img src="./lightbox/gallerypics/Chicken-Soup-Recipe.jpg" alt="Chicken Soup"></li>
+                    <li><img src="./lightbox/gallerypics/How-to-Make-Hummus.jpg" alt="Humus"></li>
+                    <li><img src="./lightbox/gallerypics/Protein-Balls-Recipe.jpg" alt="Proteinballs"></li>
+                    <li><img src="./lightbox/gallerypics/chicken-salad-recipe.jpg" alt="Chickensalad"></li>
+
+            </ul>
+        </main>
+
+        <footer>
+                All Recipes and related images taken from <a
+                href="http://www.nibbledish.com/">http://www.nibbledish.com/</a>, written by Paula,
+                Creative Commons Licensed.
+                <button id="nappi" type="button"><img src="./pics/spread.png"></img></button>
+
+
+        </footer>
+    </div>
+
+    <script src="./lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+
+    <script src="./PgwSlideshow-master/pgwslideshow.js"></script>
+    <script src="./myscripts.js"></script>  
+    
+
+</body>
+
+</html>

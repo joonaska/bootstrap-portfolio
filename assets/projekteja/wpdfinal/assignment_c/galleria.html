@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+ <!-- näin selaimet ymmärtävät että kyseessä on html sivusto-->
+<html lang="en">
+
+<head>
+<!--headissa kaikki metatiedot ja scriptit sekä välilehden otsikko-->
+<meta charset="UTF-8" />
+
+<meta Name="Author" Content="Joonas Kangaskoski, 8.2.2020">
+<meta Name="Description"
+        Content="WPD Final Assignment, näyttötyö">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+<!--linkataan .css filuun, missä näppärästi kaikki sivun stylet jemmassa/säädeltävissä-->
+<link rel="stylesheet" href="galleria.css" />
+<link href="./lightbox/dist/css/lightbox.css" rel="stylesheet" />
+<script src="https://kit.fontawesome.com/69f05b1d3e.js" crossorigin="anonymous"></script>
+
+<!--sivun otsikko välilehteen-->
+
+<title>Galleria</title>
+</head>
+
+
+<body>
+    
+    <div class="container">  
+                
+        <section>
+        <header>
+            <h1> Galleria</h1> 
+            </header>
+
+            <div class="kuvat">
+                <h2>Salikuvia</h2>
+    
+                <a href="./img/sali_iso.png" data-lightbox="kuvia"><img src="./img/sali_pieni.png" alt="salikuva"></a>
+                <a href="./img/penkki_iso.png" data-lightbox="kuvia"><img src="./img/penkki_pieni.png" alt="penkki"></a>
+                <a href="./img/puolapuut_iso.png" data-lightbox="kuvia"><img src="./img/puolapuut_pieni.png" alt="puolapuut"></a>
+                <a href="./img/säkki_iso.png" data-lightbox="kuvia"><img src="./img/säkki_pieni.png" alt="säkki"></a>
+                <a href="./img/vinopenkki_iso.png" data-lightbox="kuvia"><img src="./img/vinopenkki_pieni.png" alt="vinopenkki"></a>
+                <a href="./img/voimapyörä_iso2.png" data-lightbox="kuvia"><img src="./img/voimapyörä_pieni2.png" alt="voimapyörä"></a>
+                <a href="./img/hulahula.png" data-lightbox="kuvia"><img src="./img/hulahula_pieni.png" alt="voimapyörä"></a>
+                <a href="./img/irtotelineet.png" data-lightbox="kuvia"><img src="./img/irtotelineet_pieni.png" alt="voimapyörä"></a>
+                <a href="./img/kahvakuulia_iso.png" data-lightbox="kuvia"><img src="./img/kahvakuulia_pieni.png" alt="voimapyörä"></a>
+                <a href="./img/käsipainoja_iso.png" data-lightbox="kuvia"><img src="./img/käsipainoja_pieni.png" alt="voimapyörä"></a>
+
+
+                <h2>Liikkeitä</h2>
+
+                <p>Täytettä tulossa.....</p>
+            </div>
+            </section>
+         <!--footteri eli jokasivun alle tuommonen "kivijalka" missä on esim. nappuloita tai linkkejä vaikka sosiaalisenmedian kanaviin.-->
+         <footer><p>Joonas Kangaskoski, N3303 ---- Talosta takaisin etusivulle -> <a href="../assignment_d/responssi.html"><i class="fas fa-home fa-2x"></i></a> -- Nuolesta Päättötyön alkuun -> <a href="../index.html"><i class="fas fa-arrow-up fa-2x"></i></a> </p> </footer>
+         <!--- scripti pohjalla niin "ajaa" komennon viimesenä ja toimii näin varmasti-->
+        <script src="./lightbox/dist/js/lightbox-plus-jquery.js"></script>
+    </div>    
+</body>
+</html>

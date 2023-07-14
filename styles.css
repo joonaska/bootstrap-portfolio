@@ -1,0 +1,58 @@
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.bcolor1 {
+  background-color: #F3EFE0;
+}
+
+.bcolor2 {
+  background-color: #434242;
+}
+
+.bcolor3 {
+  background-color: #22A39F;
+}
+
+.text1 {
+  color: #222222;
+}
+
+.text2 {
+  color: #F3EFE0;
+}
+
+.text3 {
+  color: #22A39F;
+}
+
+.tummaborder {
+  border-bottom: solid 0.1rem;
+  border-color: #222222;
+
+}
+
+.vaaleaborder {
+  border-bottom: solid 0.1rem;
+  border-color: #F3EFE0;
+}
+
+.carousel .carousel-indicators button {
+  background-color: #222222;
+}
+
+.carousel-control-prev-icon {
+  background-color: #222222;
+}
+
+.carousel-control-next-icon {
+  background-color: #222222;
+}

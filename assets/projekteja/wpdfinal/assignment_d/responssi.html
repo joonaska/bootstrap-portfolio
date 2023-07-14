@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+ <!-- näin selaimet ymmärtävät että kyseessä on html sivusto-->
+<html lang="en">
+
+<head>
+<!--headissa kaikki metatiedot sekä välilehden otsikko-->
+<meta charset="UTF-8" />
+<!--viewportti skaalautuu laitteen mukaan joko isommaks tai pienemmäks...-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--linkataan .css filuun, missä näppärästi kaikki sivun stylet jemmassa/säädeltävissä-->
+<link rel="stylesheet" href="responssi.css" />
+
+<!--sivun otsikko välilehteen-->
+
+<title>Reponsiivinen sivu</title>
+<!--font awesomen iconeita varten scripti www.fontawesome.com-->
+<script src="https://kit.fontawesome.com/69f05b1d3e.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+<div class="wrapper">
+        
+<!-- navigaatiopalkki-->
+    <nav class="navi">
+        <ul>
+            <li><a href="../assignment_c/omat_tiedot.html">Tietoja minusta</a></li>
+            <li><a href="../assignment_c/galleria.html">Galleria</a></li>
+            <li><a href="../assignment_c/contact.html">Ota yhteyttä!</a></li>
+            
+        </ul>
+    </nav>
+
+    
+
+    <section class="perustiedot">
+        <header class="headeri">
+            <!--Teksti sisältö on otettu suoraan lorem ipsum sivustolta https://www.lipsum.com/, KUVAT sivuilta: https://www.pexels.com/search/workout/ -->
+            <h1>Jopen Kotisali ja palvelut</h1>
+            <div>
+            <p> ipsum dolor sit amet, consectetur adipiscing elit. Mauris imperdiet, lorem a luctus tempor,
+                orci est luctus diam, vel egestas nisl risus eget velit.<span class="dots">...</span></p> <p id="lisamatskua">Maecenas ultricies eu est sed facilisis.
+                Maecenas pharetra sapien eget diam vestibulum eleifend. Morbi ac augue vel augue ultrices venenatis. 
+                Suspendisse potenti. Phasellus ut nibh ac orci cursus porttitor ut a leo. Vestibulum cursus viverra sem, vel tincidunt nunc facilisis sit amet
+                
+
+             mattis arcu est, eget blandit sapien mattis a. Vestibulum non fermentum urna, nec dignissim dolor.
+                Maecenas pellentesque nisl id sapien hendrerit dictum. In hac habitasse platea dictumst.
+                Praesent consequat placerat justo, egestas interdum enim congue a. Vivamus tellus augue, varius vel molestie sed, tristique sit amet nisi.
+                Vivamus at pretium augue. Nulla eget semper metus.
+
+                Mauris venenatis sollicitudin dui ut porta. Mauris volutpat auctor nulla, vitae porta urna faucibus vel.
+                Sed viverra eros ornare, interdum dolor et, congue nunc. Nullam vitae lobortis nisl.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque lobortis consectetur nisl, in placerat erat placerat id.
+                Aliquam faucibus varius tortor, id viverra erat. Fusce fermentum tempor nulla at hendrerit. Phasellus ac vehicula nulla. Proin id lacinia lectus.
+                Nunc a finibus velit, eu tincidunt leo. Etiam faucibus nulla eget placerat hendrerit. Pellentesque varius blandit libero a tristique.
+                Sed nisi velit, molestie id commodo ac, hendrerit a dui. Quisque elit elit, porttitor eleifend leo a, varius aliquam arcu.
+                Suspendisse id ante commodo tellus elementum congue id a magna.</p>
+                      <button  class="nappi1" id="nappi1">Näytä lisää</button> 
+            </div>
+            </header> 
+        
+    </section>
+
+  
+<!-- iconeita fontawesomesta -->
+
+<section class="inffot" >
+    <div class="infoboksi">
+        <i class="fas fa-dumbbell fa-2x"></i>
+        <h3>Kuntosali</h3>
+        <p>Saliohjelmia</p>
+    </div>
+    <div class="infoboksi">
+        <i class="fas fa-running fa-2x"></i>
+        <h3>HIIT</h3>
+        <p>Hiki kardioita, sykkeen nostatusta</p>
+    </div>
+    <div class="infoboksi">
+        <i class="fas fa-utensils fa-2x"></i>
+        <h3>Ruokavalio</h3>
+        <p>Reseptejä, Laskureita, Vinkkejä</p>
+    </div>
+</section>
+
+<!---Tietoja osio  KUVAT sivulta:https://www.pexels.com/search/workout/  , TEKSTI sivulta: https://www.lipsum.com/ -->
+<section class="tietoja">
+    <img src="./img/tausta.alas.jpg" alt="kamppailukuva">
+    <div>
+        <h2>Salihommia, yhteisö</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel tincidunt purus, 
+            in malesuada sem. Praesent consequat at nisl quis iaculis.<span class="dots">...</span></p> <p id="lisamatskua2">Nulla eleifend eu velit at egestas.
+             Curabitur a suscipit tellus. Etiam orci erat, lobortis quis nunc ut, iaculis hendrerit lacus. 
+             Aenean placerat urna sed sem lacinia, ultricies auctor odio mollis. Aliquam erat volutpat. In blandit consequat quam, 
+             feugiat commodo nisi viverra vel. Donec non consequat nisl. Nam quis sem ut neque pretium dapibus vel eu tortor.
+              Quisque ornare purus tellus, interdum consectetur mi mattis sit amet. Suspendisse luctus vel enim eget viverra.
+               Vivamus ultricies, metus nec varius ultrices, arcu mauris bibendum tortor, ullamcorper maximus ipsum enim eget erat.
+                Donec lacinia laoreet felis vitae ullamcorper.
+
+         dolor enim, luctus in accumsan ornare, posuere et magna. Etiam pharetra augue non mauris sollicitudin,
+             sagittis posuere augue bibendum. Curabitur ultricies faucibus sapien mattis ultrices. Phasellus vehicula enim in lorem dignissim faucibus. 
+             In ultricies quam justo, commodo imperdiet est porta vel. Nam non porta urna. Donec dignissim nibh nulla, 
+             eget scelerisque nisi elementum a. Pellentesque id molestie mauris. Nulla facilisi.</p>
+             
+             <button class="nappi2" id="nappi2">Näytä lisää</button> 
+</div>
+</section>
+
+
+
+<!--footteri eli jokasivun alle tuommonen "kivijalka" missä on esim. nappuloita tai linkkejä vaikka sosiaalisenmedian kanaviin. mulla tuollaaaset-->
+<footer><p>Joonas Kangaskoski, N3303 ---- Takaisin etusivulle -> </p> <a href="../assignment_d/responssi.html"><i class="fas fa-home fa-2x"></i></a> <p> --Päättötyön alkuun -> </p>  <a href="../index.html"><i class="fas fa-arrow-up fa-2x"></i></a> </footer>
+
+
+
+
+</div>
+<script src="./js/nappijava.js"></script>
+<script src="./js/nappijava2.js"></script>
+</body>
+</html>

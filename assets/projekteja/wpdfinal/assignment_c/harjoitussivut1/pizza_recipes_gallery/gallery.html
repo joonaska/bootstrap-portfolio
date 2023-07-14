@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="WPD-student" />
+    <meta name="keywords" content="xhtml, html5, wpd, jamk, tiko, recipes" />
+    <meta name="description" content="Exercises for the WPD course." />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles_gallery.css">
+    <link href="./lightbox/dist/css/lightbox.css" rel="stylesheet" />
+
+    
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <img src="./pics/www_logo.gif" alt="JAMK" />
+            <h1>Gallery</h1>
+        </header>
+        <!-----------Navigaatiopalkki--------------------->
+        <nav>
+            <ul id="navi">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="pizza.html">Pizza Online</a></li>
+                <li><span class="sel">Gallery</span></li>
+                
+               
+               
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <!------Lomake------->
+            <table id="login">
+                <form action="action.php" method="POST">
+
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input required name="email" id="email" type="email">
+                        </td>
+                        <td rowspan="2">
+                            <button type="submit">Login</button>
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>
+                            <input required type="password" id="password" type="password">
+                        </td>
+                    </tr>
+                </form>
+            </table>
+
+
+        </nav>
+        <!----------Mainokset--------------->
+        <aside>
+            <img src="./pics/compsale.jpg" alt="Computer Shop" />
+
+            <img src="./pics/pertsanpub.jpg" alt="Pertsan Pub" />
+
+            <img src="./pics/clickhere.jpg" alt="Want your ad here?" />
+        </aside>
+        <!--------------Pääsisältö------------->
+        <main>
+            <h2>Gallery Examples</h2>
+
+            <a href="./lightbox/gallerypics/Butterbeer-Recipe.jpg" data-lightbox="recipes"><img src="./lightbox/gallerypics/Butterbeer-Recipe_thumb.jpg" alt="butterbeer"></a>
+            <a href="./lightbox/gallerypics/chicken-salad-recipe.jpg" data-lightbox="recipes"><img src="./lightbox/gallerypics/chicken-salad-recipe_thumb.jpg" alt="chickensalad"></a>
+            <a href="./lightbox/gallerypics/Chicken-Soup-Recipe.jpg" data-lightbox="recipes"><img src="./lightbox/gallerypics/Chicken-Soup-Recipe_thumb.jpg" alt="chickensoup"></a>
+            <a href="./lightbox/gallerypics/How-to-Make-Hummus.jpg" data-lightbox="recipes"><img src="./lightbox/gallerypics/How-to-Make-Hummus_thumb.jpg" alt="humus"></a>
+            <a href="./lightbox/gallerypics/Protein-Balls-Recipe.jpg" data-lightbox="recipes"><img src="./lightbox/gallerypics/Protein-Balls-Recipe_thumb.jpg" alt="proteinballs"></a>
+
+        </main>
+
+        <footer>All Recipes and related images taken from <a
+                href="http://www.nibbledish.com/">http://www.nibbledish.com/</a>, written by Paula,
+            Creative Commons Licensed.
+
+        </footer>
+    </div>
+    <script src="./lightbox/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+
+</html>
